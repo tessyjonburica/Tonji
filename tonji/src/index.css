@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* External CSS for the Hero Component */
+
+.tonjibg{
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid #0070f3; /* Adjust the border color as needed */
     background-color: #1d1c18;
 }
 
