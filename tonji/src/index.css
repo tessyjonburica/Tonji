@@ -1,3 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* External CSS for the Hero Component */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #0070f3; /* Adjust the border color as needed */
+    background-color: #1d1c18;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 390.33px;
+    line-height: 476.2px;
+    letter-spacing: 7%;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.hero-image {
+    height: 559px;
+    width: 537.36px;
+    transform: scaleX(-1);
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 190px;
+    right: -140px;
+    padding: 10px 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tondog{
+    border-radius: 203px 0 203px 0;
+    
+}
+/* Small Screen Adjustments */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 100px;
+        line-height: 1.1em;
+    }
+
+    .hero-image-container {
+        flex-direction: column; 
+    }
+
+    .hero-image {
+        border: 1px solid rgb(255, 255, 0);
+        height: 300px;
+        width: auto;
+        margin-bottom: 10px; 
+    }
+
+    .hero-button {
+        position: relative; /* Makes the button follow the normal flow */
+        bottom: auto; /* Removes bottom positioning */
+        top: auto; /* Removes top positioning */
+        right: auto; /* Resets right positioning */
+        transform: none; /* Resets transform */
+        order: -1; /* Ensures the button comes before the image */
+        margin-bottom: 10px; /* Adds spacing between the button and image */
+    }
+
+    .tondog{
+        border-radius: 112px 0 112px 0;
+        
+    }
+}
