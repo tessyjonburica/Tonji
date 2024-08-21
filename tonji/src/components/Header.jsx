@@ -31,7 +31,7 @@ const Header = () => {
       <nav className="hidden md:flex justify-center space-x-4">
         <a href="#" className="hover:underline text-white">DexTools</a>
         <a href="#" className="hover:underline text-white">Telegram</a>
-        <a href="#" className="hover:underline text-white">Twitter</a>
+        <a href="#" className="hover:underline text-white">X</a>
         <a href="#" className="hover:underline text-white">Merch</a>
         <a href="#" className="hover:underline text-white">Tamagotchi</a>
       </nav>
