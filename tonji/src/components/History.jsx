@@ -7,7 +7,7 @@ import tonjisign from '../assets/tonji-sign.png';
 function History() {
     return (
         <section className="bg-[#1d1c18] flex flex-col items-center justify-between relative">
-            <img src={borderFrame} alt="background frame" className="w-full object-cover" />
+            <img src={borderFrame} alt="background frame" className="w-full object-cover mb-10" />
 
             <div className="flex flex-col md:flex-row items-center justify-between p-6 mt-12 mb-12 w-full max-w-5xl">
                 <div className="text-white md:text-left md:w-1/2 mb-10 md:mb-0 md:mr-12">
@@ -21,11 +21,11 @@ function History() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-between p-6 mb-12 w-full max-w-5xl">
+            <div className="flex flex-col md:flex-row items-center justify-between p-6 mt-10 mb-12 w-full max-w-5xl">
                 <div className='md:w-1/2 flex justify-center mb-6 md:mb-0 md:mr-12'>
                     <img src={tonjisign} alt="tonjisign" className="w-3/4 md:w-full object-contain" />
                 </div>
-                <div className='md:w-1/2 text-white'>
+                <div className='md:w-1/2 text-white mt-5 lg:mt-0'>
                     <p className='text-lg font-inter font-semibold mb-4'>An Ancient History</p>
                     <p className='font-inter font-normal mb-4'>
                         The Tonji's history in Ancient Egypt dates back thousands of years, where they were revered as companions to pharaohs and depicted in ancient hieroglyphics. Known for their intelligence and hunting prowess, Tonjis were prized for their ability to assist in tracking and capturing game in the Egyptian desert.
@@ -36,7 +36,7 @@ function History() {
                 </div>
             </div>
 
-            <img src={borderFrame} alt="bottom image frame" className="w-full object-cover" />
+            <img src={borderFrame} alt="bottom image frame" className="w-full object-cover mt-10" />
         </section>
     );
 }

@@ -21,7 +21,8 @@
     color: #fff;
     font-size: 390.33px;
     line-height: 476.2px;
-    letter-spacing: 7%;
+    letter-spacing: 27.323px;
+    
 }
 
 .hero-image-container {
@@ -55,8 +56,13 @@
 /* Small Screen Adjustments */
 @media (max-width: 640px) {
     .hero-title {
-        font-size: 100px;
-        line-height: 1.1em;
+        font-size: 156.239px;
+        line-height: normal;
+        font-weight: 400;
+        letter-spacing: 10.937px;
+        margin-bottom: 60px;
+        margin-top: 60px;
+
     }
 
     .hero-image-container {
@@ -64,9 +70,9 @@
     }
 
     .hero-image {
-        border: 1px solid rgb(255, 255, 0);
-        height: 300px;
-        width: auto;
+       
+        height: 381.179px;
+        width: 366.609px;
         margin-bottom: 10px; 
     }
 
@@ -77,7 +83,10 @@
         right: auto; /* Resets right positioning */
         transform: none; /* Resets transform */
         order: -1; /* Ensures the button comes before the image */
-        margin-bottom: 10px; /* Adds spacing between the button and image */
+        margin-bottom: 30px; /* Adds spacing between the button and image */
+        padding: 16px 18px;
+        width: 211px;
+        gap: 10px;
     }
 
     .tondog{
