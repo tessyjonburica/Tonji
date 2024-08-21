@@ -6,6 +6,8 @@ import { PiTelegramLogoLight } from "react-icons/pi";
 import { RxDiscordLogo } from "react-icons/rx";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="bg-black text-white py-8 px-4 md:px-16">
             <div className="flex flex-col md:flex-row justify-between items-center">
@@ -51,6 +53,10 @@ const Footer = () => {
                     />
                 </div>
             </div>
+{/*           
+            <div className="mt-8 border-t border-gray-400 pt-4 flex justify-center items-center text-sm">
+                <span>&copy; {currentYear} Tonji. All Rights Reserved. Built with Teslim</span>
+            </div> */}
         </footer>
     );
 };
