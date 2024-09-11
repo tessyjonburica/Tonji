@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#1d1c18] text-white font-Montserrat font-semibold relative">
+    <header className="bg-[#1D1C18] text-white font-Montserrat font-semibold relative">
       {/* Small screen hamburger button and large screen navbar */}
       <div className="flex justify-center items-center py-4 px-4">
         {/* Small screen hamburger button */}
