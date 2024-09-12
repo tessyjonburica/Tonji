@@ -5,7 +5,7 @@ import DogImage from '../assets/dog.png'; // Ensure you have this image in the c
 
 const Hero = () => {
   return (
-    <main className="hero-container">
+    <main className="hero-container min-h-[982px] border border-white">
       <h1 className="font-mooLahLah font-normal hero-title text-center">Tonji</h1>
       <div className="hero-image-container">
         <img

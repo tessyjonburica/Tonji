@@ -28,7 +28,7 @@ const Header = () => {
       </div>
 
       {/* Large screen navbar */}
-      <nav className="hidden md:flex justify-center space-x-4">
+      <nav className="hidden md:flex justify-center space-x-16"> {/* Update space-x-4 to space-x-16 */}
         <a href="#" className="hover:underline text-white">DexTools</a>
         <a href="#" className="hover:underline text-white">Telegram</a>
         <a href="#" className="hover:underline text-white">X</a>

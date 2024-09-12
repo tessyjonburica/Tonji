@@ -3,9 +3,10 @@ import mint from '../assets/dog-sign.png';
 import bowl from '../assets/bowl.png';
 import burnt from '../assets/lp.png';
 
+
 const Tokenomics = () => {
   return (
-    <div className="bg-black min-h-screen flex items-center justify-center tonjibg">
+    <div className="bg-black min-h-[982px] flex items-center justify-center tonjibg">
       <div
         className="text-white rounded-lg shadow-lg p-8 max-w-lg  mx-3 text-center border border-[#423f36]"
         style={{ backgroundColor: "#1D1C18" }}
@@ -28,6 +29,7 @@ const Tokenomics = () => {
             <span>Mint revoked</span>
           </div>
         </div>
+     
       </div>
     </div>
   );

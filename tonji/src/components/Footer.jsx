@@ -26,13 +26,13 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex items-start space-x-4 mt-4 md:mt-0">
-                        <button className="bg-gray-800 p-3 rounded-full">
+                        <button className="bg-[#2C2A24] p-2 rounded">
                             <RiTwitterXFill className="text-xl md:text-2xl" />
                         </button>
-                        <button className="bg-gray-800 p-3 rounded-full">
+                        <button className="bg-[#2C2A24] p-2 rounded">
                             <PiTelegramLogoLight className="text-xl md:text-2xl" />
                         </button>
-                        <button className="bg-gray-800 p-3 rounded-full">
+                        <button className="bg-[#2C2A24] p-2 rounded">
                             <RxDiscordLogo className="text-xl md:text-2xl" />
                         </button>
                     </div>
@@ -49,7 +49,7 @@ const Footer = () => {
                     <img
                         src={DogImage}
                         alt="Tonji Dog"
-                        className="absolute w-[60vw] h-[60vw] md:w-[454.001px] md:h-[472.044px] flex-shrink-0"
+                        className="absolute w-[60vw] h-[60vw] md:w-[454px] md:h-[472px] flex-shrink-0"
                     />
                 </div>
             </div>
