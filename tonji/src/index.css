@@ -23,7 +23,7 @@
     font-size: 390.33px;
     line-height: 476.2px;
     letter-spacing: 27.323px;
-
+    margin-bottom: 0;
 }
 
 .hero-image-container {
@@ -31,6 +31,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: -150px;
 }
 
 .hero-image {
@@ -53,43 +54,35 @@
 .tondog {
     border-radius: 203px 0 203px 0;
     max-width: 100%;
-    height: auto; /* Responsive height */
+    height: auto;
 }
 
 .tondogCon {
     position: relative;
     border-radius: 203.33px 0 203.33px 0;
-    background: #00000029; /* Transparent black */
+    background: rgba(0, 0, 0, 0.16); /* Slight transparency */
+    
+    /* Inner shadow for the forward tip */
+    box-shadow: inset -10px -10px 50px rgba(0, 0, 0, 0.8); /* More pronounced shadow */
+    
+    /* Gradient dark overlay on the forward tip */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 203.33px 0 203.33px 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
+        pointer-events: none;
+    }
+
+    /* Border with gradient effect */
+    
+    border-image: linear-gradient(90deg, #000000 0%, #4B4B4B 100%);
+    border-image-slice: 1;
 }
-
-.tondogCon::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0; /* Forward tip */
-    width: 100px; /* Adjust for subtle overlay */
-    height: 100%;
-    border-radius: 203.33px 0 203.33px 0;
-    box-shadow: inset -5px 0px 10px rgba(141, 141, 141, 0.5); /* Subtle inner shadow */
-    pointer-events: none; /* Prevent interaction */
-}
-
-/* .tondog {
-
-    border-radius: 203.33px, 0px, 203.33px, 0px;
-    border: 1px 0px 0px 0px solid rgb(228, 30, 30);
-    opacity: 0px;
-    border: 1px solid;
-    border-image-source: linear-gradient(0deg, #000000, #000000),
-        linear-gradient(0deg, #4B4B4B, #4B4B4B);
-    box-shadow: 90px 30px 44px 0px rgba(0, 0, 0, 0.17) inset;
-
-}
-
-.tondogCon {
-    height: 497.15px;
-} */
-
 
 /* Small Screen Adjustments */
 @media (max-width: 640px) {
@@ -119,7 +112,7 @@
         /* Makes the button follow the normal flow */
         bottom: auto;
         /* Removes bottom positioning */
-        top: auto;
+        /* top: auto; */
         /* Removes top positioning */
         right: auto;
         /* Resets right positioning */
@@ -127,15 +120,46 @@
         /* Resets transform */
         order: -1;
         /* Ensures the button comes before the image */
-        margin-bottom: 30px;
+        margin-top: 150px;
+        margin-bottom: 50px;
         /* Adds spacing between the button and image */
-        padding: 16px 18px;
+        padding: 16px, 18px, 16px, 18px;
+        height: 48px;
         width: 211px;
         gap: 10px;
     }
 
+
     .tondog {
         border-radius: 112px 0 112px 0;
-
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .tondogCon {
+        position: relative;
+        border-radius: 112px 0 112px 0;
+        background: rgba(0, 0, 0, 0.16); /* Slight transparency */
+        
+        /* Inner shadow for the forward tip */
+        box-shadow: inset -10px -10px 50px rgba(0, 0, 0, 0.8); /* More pronounced shadow */
+        
+        /* Gradient dark overlay on the forward tip */
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 112px 0 112px 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
+            pointer-events: none;
+        }
+    
+        /* Border with gradient effect */
+        
+        border-image: linear-gradient(90deg, #000000 0%, #4B4B4B 100%);
+        border-image-slice: 1;
     }
 }

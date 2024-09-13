@@ -6,6 +6,7 @@ import okx from '../assets/icon/okx.png';
 import coingecko from '../assets/icon/coingeko.png';
 import dexscreener from '../assets/icon/dexscreener.png';
 import coinmarket from '../assets/icon/mcap.png';
+import vector1 from '../assets/Vector 67.png';
 
 const TreatComponent = () => {
     const [copied, setCopied] = useState(false);
@@ -20,14 +21,15 @@ const TreatComponent = () => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-between bg-[#1d1c18]">
+        <section className="flex flex-col items-center justify-between bg-[#11110E]">
 
             <img src={separator} alt="separator" className="w-full object-cover" />
 
             <div className='flex justify-center items-center min-h-[982px]'>
-                <div className="relative bg-gray-800 text-white px-2 py-11 shadow-lg max-w-md mx-3 border border-[#423f36] rounded-lg" style={{ backgroundColor: "#181814" }}>
-                    <h2 className="md:text-xl font-semibold font-inter text-center text-[32px]">Where you can treat</h2>
-                    <p className="text-center font-inter mt-4 mb-6 text-gray-300">
+            
+                <div className="relative bg-gray-800 text-white md:px-6 md:py-12 px-4 py-10 shadow-lg max-w-md mx-3 border border-[#423f36] rounded-lg" style={{ backgroundColor: "#181814" }}>
+                    <h2 className="md:text-[35px] font-semibold font-inter text-center text-[25px]">Where you can treat</h2>
+                    <p className="text-center font-inter mt-4 mb-6 text-[16px] md:text-[19px] text-gray-300">
                         Don't miss out on the joy of owning plenty of $TONJI tokens – it's like discovering the perfect dog treat on Ton.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center mb-6">
@@ -40,7 +42,7 @@ const TreatComponent = () => {
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                             >
-                                <path d="M16.707 5.293a1 1 0 00-1.414 0L10 10.586 7.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l6-6a1 1 0 000-1.414z" />
+                                <path d="M16.707 5.293a1 1 0 00-1.414 0L10 10.586 7.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l6-6a 1 1 0 000-1.414z" />
                             </svg>
                             {copied && <span className="ml-2 text-green-400">Copied!</span>}
                         </button>

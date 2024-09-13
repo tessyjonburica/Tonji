@@ -9,7 +9,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-black text-white py-8 px-4 md:px-16">
+        <footer className="bg-[#1D1C18] text-white py-8 px-4 md:px-16">
             <div className="flex flex-col md:flex-row justify-between items-center">
 
                 {/* Partners List and Social Icons Section */}
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
 
                 {/* Divider for desktop view */}
-                <div className="my-4 md:my-0 md:border-l border-gray-700 h-24 hidden md:block"></div>
+                <div className="my-4 md:my-0 md:border-l border-gray-700 h-24  md:block"></div>
 
                 {/* Logo and Image Section */}
                 <div className="relative flex items-center justify-center w-full md:w-2/3 mt-8 md:mt-0">

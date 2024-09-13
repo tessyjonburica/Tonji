@@ -8,11 +8,11 @@ const Tokenomics = () => {
   return (
     <div className="bg-black min-h-[982px] flex items-center justify-center tonjibg">
       <div
-        className="text-white rounded-lg shadow-lg p-8 max-w-lg  mx-3 text-center border border-[#423f36]"
+        className="text-white rounded-lg shadow-lg p-8 max-w-lg  mx-3  border border-[#423f36]"
         style={{ backgroundColor: "#1D1C18" }}
       >
-        <h2 className="text-2xl font-bold mb-4">Tokenomics</h2>
-        <p className="mb-8">
+        <h2 className=" text-[32px] md:text-[49px] font-bold text-center mb-4">Tokenomics</h2>
+        <p className="mb-8 text-[16px] text-center md:text-[20px] px-2">
           Tonji boasts a straightforward tokenomic structure, built to endure for eternity. Just like the timeless legacy of ancient Egypt, $TONJI is poised to withstand the sands of time.
         </p>
         <div className="flex flex-wrap justify-around items-center space-y-4">
